@@ -13,7 +13,7 @@
     only screen and (        min-device-pixel-ratio: 2),
     only screen and (                min-resolution: 192dpi),
     only screen and (                min-resolution: 2dppx) {
-      @include background-size(image-width($image) auto);
+      @include background-size(100% auto);
       background-image: image-url(retina_filename($image));
     }
   }
@@ -32,7 +32,7 @@
     only screen and (        min-device-pixel-ratio: 2),
     only screen and (                min-resolution: 192dpi),
     only screen and (                min-resolution: 2dppx) {
-      @include background-size(image-width($image) auto);
+      @include background-size(100% auto);
       background-image: inline-image(retina_filename($image));
     }
   }
