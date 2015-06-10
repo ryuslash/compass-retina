@@ -1,7 +1,7 @@
 @import "compass/css3/background-size";
 
 @mixin background-image-retina($image) {
-  background-image: image-url($image);
+  background-image: asset-url($image);
 
   // If we have a retina image then add styles for it too
   @if file_exists(retina_filename($image)) {
@@ -14,7 +14,7 @@
     only screen and (                min-resolution: 192dpi),
     only screen and (                min-resolution: 2dppx) {
       @include background-size(100% auto);
-      background-image: image-url(retina_filename($image));
+      background-image: asset-url(retina_filename($image));
     }
   }
 }
